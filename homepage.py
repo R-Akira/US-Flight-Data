@@ -11,11 +11,7 @@ from pages.content_1 import content1
 from pages.content_2 import content2
 from pages.about_us import aboutus
 
-import os
-
-
-os.chdir("/Users/user/Desktop/Flight Dashboard/Analysis")
-
+# Initiating Dash
 app = dash.Dash(
     __name__, meta_tags=[{"name": "viewport", "content": "width=device-width"},
     ],external_stylesheets=[dbc.themes.BOOTSTRAP]
