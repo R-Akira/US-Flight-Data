@@ -11,13 +11,13 @@ def content2(app):
     ################## Data Analysis ##################
     
     #2019
-    j19_df = pd.read_csv('Jan_2019_ontime.csv')
-    f19_df = pd.read_csv('Feb_2019_ontime.csv')
+    a = pd.read_csv('https://raw.githubusercontent.com/R-Akira/US-Flight-Data/master/Analysis/Jan_2019_ontime.csv')
+    b = pd.read_csv('https://raw.githubusercontent.com/R-Akira/US-Flight-Data/master/Analysis/Feb_2019_ontime.csv')
 
     #2020
-    j20_df = pd.read_csv('Jan_2020_ontime.csv')
-    f20_df = pd.read_csv('Feb_2020_ontime.csv')
-
+    c = pd.read_csv('https://raw.githubusercontent.com/R-Akira/US-Flight-Data/master/Analysis/Jan_2020_ontime.csv')
+    d = pd.read_csv('https://raw.githubusercontent.com/R-Akira/US-Flight-Data/master/Analysis/Feb_2020_ontime.csv')
+    
     # Number of flights by airline
 
     f_num = j19_df.groupby('OP_CARRIER')[['DEST']].count()
