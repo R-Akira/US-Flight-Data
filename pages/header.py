@@ -6,7 +6,7 @@ import dash_bootstrap_components as dbc
 def f_header(app):
     header = [
         html.Div(children=[
-            html.Img(src=app.get_asset_url("plane.png"), 
+            html.Img(src=app.get_asset_url("https://github.com/R-Akira/US-Flight-Data/blob/master/assets/plane.png"), 
             id = "plotly-image",
             style = {
                 "height" : "60px",
